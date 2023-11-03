@@ -1,11 +1,18 @@
 import "./App.css";
 import "mapbox-gl/dist/mapbox-gl.css";
-import React, { useState } from "react";
-import Map, { Marker, NavigationControl, GeolocateControl, FullscreenControl } from "react-map-gl";
+import { useState } from "react";
+import * as React from "react";
+import Map, {
+  Marker,
+  NavigationControl,
+  GeolocateControl,
+  FullscreenControl,
+} from "react-map-gl";
 
 function App() {
   const [lng, setLng] = useState(9.7679);
   const [lat, setLat] = useState(4.0511);
+
   return (
     <>
       <div>
@@ -26,15 +33,22 @@ function App() {
             latitude: lat,
             zoom: 13,
           }}
-          mapStyle="mapbox://styles/mapbox/streets-v12"
+          mapStyle="mapbox://styles/mapbox/satellite-streets-v12"
         >
-          <Marker longitude={lng} latitude={lat} />
+          <Marker
+            longitude={lng}
+            latitude={lat}
+            offsetTop={-20}
+            offsetLeft={-10}
+          >
+            <div style={{ color: "red", fontSize: 24 }}>📍</div>
+          </Marker>
 
           <NavigationControl position="bottom-right" />
 
           <GeolocateControl position="bottom-right" />
 
-          <FullscreenControl/>
+          <FullscreenControl />
         </Map>
       </div>
     </>
