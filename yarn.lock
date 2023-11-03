@@ -236,7 +236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.9.2":
   version: 7.23.2
   resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
@@ -1550,6 +1550,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es6-promise@npm:^4.0.5":
+  version: 4.2.8
+  resolution: "es6-promise@npm:4.2.8"
+  checksum: 2373d9c5e9a93bdd9f9ed32ff5cb6dd3dd785368d1c21e9bbbfd07d16345b3774ae260f2bd24c8f836a6903f432b4151e7816a7fa8891ccb4e1a55a028ec42c3
+  languageName: node
+  linkType: hard
+
 "esbuild@npm:^0.18.10":
   version: 0.18.20
   resolution: "esbuild@npm:0.18.20"
@@ -2049,7 +2056,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gl-matrix@npm:^3.4.3":
+"gl-matrix@npm:^3.0.0, gl-matrix@npm:^3.4.3":
   version: 3.4.3
   resolution: "gl-matrix@npm:3.4.3"
   checksum: c8ee6e2ce2d089b4ba4ae13ec9d4cb99bf2abe5f68f0cb08d94bbd8bafbec13aacc7230b86539ce5ca01b79226ea8c3194f971f5ca0c81838bc5e4e619dc398e
@@ -2951,6 +2958,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mapbox@npm:^1.0.0-beta10":
+  version: 1.0.0-beta9
+  resolution: "mapbox@npm:1.0.0-beta9"
+  dependencies:
+    es6-promise: "npm:^4.0.5"
+    rest: "npm:^2.0.0"
+  checksum: fa7c216c5e8cf278fa5c858e4dabf376eeace4aa85a463228a293ecc244a91a32bda314f3ae294258ff841ac168d16adc0d013f018435e804fc036b6b04e30e4
+  languageName: node
+  linkType: hard
+
 "meow@npm:^9.0.0":
   version: 9.0.0
   resolution: "meow@npm:9.0.0"
@@ -3562,6 +3579,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-mapbox-gl-geocoder@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "react-mapbox-gl-geocoder@npm:1.1.0"
+  dependencies:
+    mapbox: "npm:^1.0.0-beta10"
+    viewport-mercator-project: "npm:^6.0.0"
+  peerDependencies:
+    prop-types: ^15.5.4
+    react: ^15.0.0 || ^16.0.0
+    react-dom: ^15.0.0 || ^16.0.0
+  checksum: bf9956a139a82c386f4ba49820f16aed7dd87503f9cd79a67e6b438628e231e97347ba7289ab090668796111c4998a2ded89ab7ff3d9f1459aefeeabeec01175
+  languageName: node
+  linkType: hard
+
 "react-refresh@npm:^0.14.0":
   version: 0.14.0
   resolution: "react-refresh@npm:0.14.0"
@@ -3614,9 +3645,11 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.3"
     mapbox-gl: "npm:^2.15.0"
+    prop-types: "npm:^15.8.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-map-gl: "npm:^7.1.6"
+    react-mapbox-gl-geocoder: "npm:^1.1.0"
     vite: "npm:^4.4.5"
   languageName: unknown
   linkType: soft
@@ -3746,6 +3779,13 @@ __metadata:
   bin:
     resolve: bin/resolve
   checksum: 78ad6edb8309a2bfb720c2c1898f7907a37f858866ce11a5974643af1203a6a6e05b2fa9c53d8064a673a447b83d42569260c306d43628bff5bb101969708355
+  languageName: node
+  linkType: hard
+
+"rest@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "rest@npm:2.0.0"
+  checksum: 3e6e07ec939ed289067ed0959a56ea83da89b025acd6036d313d1d829d64e40b79066881457f3c5ffd763755fbfcf6122103218030c019fe1e6b8dc31ea6cf57
   languageName: node
   linkType: hard
 
@@ -4436,6 +4476,16 @@ __metadata:
     spdx-correct: "npm:^3.0.0"
     spdx-expression-parse: "npm:^3.0.0"
   checksum: 7b91e455a8de9a0beaa9fe961e536b677da7f48c9a493edf4d4d4a87fd80a7a10267d438723364e432c2fcd00b5650b5378275cded362383ef570276e6312f4f
+  languageName: node
+  linkType: hard
+
+"viewport-mercator-project@npm:^6.0.0":
+  version: 6.2.3
+  resolution: "viewport-mercator-project@npm:6.2.3"
+  dependencies:
+    "@babel/runtime": "npm:^7.0.0"
+    gl-matrix: "npm:^3.0.0"
+  checksum: 787b02f89d60c4e71fd1faa9391853502339cc65159b7b3a70c4ee79f232187daad24e0e3694dded836cee9a69a19138981735361c50ac4172c15e4100c1891a
   languageName: node
   linkType: hard
 
