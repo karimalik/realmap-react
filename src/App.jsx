@@ -24,9 +24,9 @@ function App() {
           initialViewState={{
             longitude: lng,
             latitude: lat,
-            zoom: 9,
+            zoom: 13,
           }}
-          mapStyle="mapbox://styles/mapbox/streets-v9"
+          mapStyle="mapbox://styles/mapbox/streets-v12"
         >
           <Marker longitude={lng} latitude={lat} />
 
