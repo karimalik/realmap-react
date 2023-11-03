@@ -13,19 +13,19 @@ The  real map using [ReactJs](https://react.dev/) and [MapBox](https://mapbox.co
 2. Clone the project:
 
 ```
-git clone https://github.com/karimalik/mapsbox.git
+git clone https://github.com/karimalik/realmap-react.git
 ```
 
 3. Open the project folder:
 
 ```
-cd mapsbox
+cd realmap-react
 ```
 
 4. Install dependencies:
 
 ```
-yarn install
+yarn
 ```
 
 5. Note: if you don't have yarn installed, you can install it globally using npm:
