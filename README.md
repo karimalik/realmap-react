@@ -1,8 +1,42 @@
-# React + Vite
+# Real Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The  real map using [ReactJs](https://react.dev/) and [MapBox](https://mapbox.com/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Setup
+
+1. Make sure you have NodeJs installed. if you don't have it:
+
+- [Download it from nodejs.org](https://nodejs.org)
+- [Install it using NVM](https://github.com/nvm-sh/nvm)
+
+2. Clone the project:
+
+```
+git clone https://github.com/karimalik/mapsbox.git
+```
+
+3. Open the project folder:
+
+```
+cd mapsbox
+```
+
+4. Install dependencies:
+
+```
+yarn install
+```
+
+5. Note: if you don't have yarn installed, you can install it globally using npm:
+
+```
+npm install --global yarn 
+```
+
+6. Start a local dev server:
+
+```
+yarn dev
+
+
