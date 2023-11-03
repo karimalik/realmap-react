@@ -12,6 +12,7 @@ import Map, {
 function App() {
   const [lng, setLng] = useState(9.7679);
   const [lat, setLat] = useState(4.0511);
+  const tokens = "pk.eyJ1IjoieGRjb25kb3IiLCJhIjoiY2xvaTllcGk1MWs0OTJqcXBnZjlyOTQ0dSJ9.Pna-RQr8jV9-YWwezCDLPA";
 
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
           Real Map
         </h1>
         <Map
-          mapboxAccessToken="pk.eyJ1IjoieGRjb25kb3IiLCJhIjoiY2xvaTllcGk1MWs0OTJqcXBnZjlyOTQ0dSJ9.Pna-RQr8jV9-YWwezCDLPA" //your access token
+          mapboxAccessToken= {tokens}
           style={{
             width: 1500,
             height: 1000,

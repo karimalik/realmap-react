@@ -35,9 +35,11 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:0.4.4"],\
           ["mapbox-gl", "npm:2.15.0"],\
+          ["prop-types", "npm:15.8.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:18.2.0"],\
           ["react-map-gl", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:7.1.6"],\
+          ["react-mapbox-gl-geocoder", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:1.1.0"],\
           ["vite", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:4.5.0"]\
         ],\
         "linkType": "SOFT"\
@@ -1900,6 +1902,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["es6-promise", [\
+      ["npm:4.2.8", {\
+        "packageLocation": "../../.yarn/berry/cache/es6-promise-npm-4.2.8-c9f5b11f66-10c0.zip/node_modules/es6-promise/",\
+        "packageDependencies": [\
+          ["es6-promise", "npm:4.2.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["esbuild", [\
       ["npm:0.18.20", {\
         "packageLocation": "./.yarn/unplugged/esbuild-npm-0.18.20-004a76d281/node_modules/esbuild/",\
@@ -3425,6 +3436,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["mapbox", [\
+      ["npm:1.0.0-beta9", {\
+        "packageLocation": "../../.yarn/berry/cache/mapbox-npm-1.0.0-beta9-2385377ff8-10c0.zip/node_modules/mapbox/",\
+        "packageDependencies": [\
+          ["mapbox", "npm:1.0.0-beta9"],\
+          ["es6-promise", "npm:4.2.8"],\
+          ["rest", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["mapbox-gl", [\
       ["npm:2.15.0", {\
         "packageLocation": "../../.yarn/berry/cache/mapbox-gl-npm-2.15.0-356ba00f33-10c0.zip/node_modules/mapbox-gl/",\
@@ -4170,6 +4192,38 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-mapbox-gl-geocoder", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../.yarn/berry/cache/react-mapbox-gl-geocoder-npm-1.1.0-88046c07f9-10c0.zip/node_modules/react-mapbox-gl-geocoder/",\
+        "packageDependencies": [\
+          ["react-mapbox-gl-geocoder", "npm:1.1.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:1.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-mapbox-gl-geocoder-virtual-06c02fc4bd/3/.yarn/berry/cache/react-mapbox-gl-geocoder-npm-1.1.0-88046c07f9-10c0.zip/node_modules/react-mapbox-gl-geocoder/",\
+        "packageDependencies": [\
+          ["react-mapbox-gl-geocoder", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:1.1.0"],\
+          ["@types/prop-types", null],\
+          ["@types/react", "npm:18.2.34"],\
+          ["@types/react-dom", "npm:18.2.14"],\
+          ["mapbox", "npm:1.0.0-beta9"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:18.2.0"],\
+          ["viewport-mercator-project", "npm:6.2.3"]\
+        ],\
+        "packagePeers": [\
+          "@types/prop-types",\
+          "@types/react-dom",\
+          "@types/react",\
+          "prop-types",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-refresh", [\
       ["npm:0.14.0", {\
         "packageLocation": "../../.yarn/berry/cache/react-refresh-npm-0.14.0-78ef5eeb73-10c0.zip/node_modules/react-refresh/",\
@@ -4218,9 +4272,11 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:0.4.4"],\
           ["mapbox-gl", "npm:2.15.0"],\
+          ["prop-types", "npm:15.8.1"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:18.2.0"],\
           ["react-map-gl", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:7.1.6"],\
+          ["react-mapbox-gl-geocoder", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:1.1.0"],\
           ["vite", "virtual:fac3166a244abd74337b3de88211bf755125c19e3b83bc42bb6597822a2d7f153e1f5e25c19b8372868246303ce8fb115f2fce824b71c395ee375ece57f75e5a#npm:4.5.0"]\
         ],\
         "linkType": "SOFT"\
@@ -4342,6 +4398,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["resolve-protobuf-schema", "npm:2.1.0"],\
           ["protocol-buffers-schema", "npm:3.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["rest", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/rest-npm-2.0.0-64709e7816-10c0.zip/node_modules/rest/",\
+        "packageDependencies": [\
+          ["rest", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5111,6 +5176,17 @@ const RAW_RUNTIME_STATE =
           ["validate-npm-package-license", "npm:3.0.4"],\
           ["spdx-correct", "npm:3.2.0"],\
           ["spdx-expression-parse", "npm:3.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["viewport-mercator-project", [\
+      ["npm:6.2.3", {\
+        "packageLocation": "../../.yarn/berry/cache/viewport-mercator-project-npm-6.2.3-e71c949ded-10c0.zip/node_modules/viewport-mercator-project/",\
+        "packageDependencies": [\
+          ["viewport-mercator-project", "npm:6.2.3"],\
+          ["@babel/runtime", "npm:7.23.2"],\
+          ["gl-matrix", "npm:3.4.3"]\
         ],\
         "linkType": "HARD"\
       }]\
