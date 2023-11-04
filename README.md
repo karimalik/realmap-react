@@ -1,6 +1,6 @@
 # Real Map
 
-The  real map using [ReactJs](https://react.dev/) and [MapBox](https://mapbox.com/)
+The  realtime map using [ReactJs](https://react.dev/) and [MapBox](https://mapbox.com/)
 
 
 # Setup
